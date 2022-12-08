@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(180deg, #19265f 0%, #8c5d9e 100%);
+  min-height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.container {
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10% 5%;
+}
+
+input {
+  padding: 15px;
+  border: none;
+  width: 100%;
+  font-size: 1em;
+  background-color: #433a7600;
+  border-bottom: 1px solid #ffffff80;
+  color: #ffffffd0;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: #ffffffd0;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  gap: 1em;
+}
+
+.btn {
+  cursor: pointer;
+  color: white;
+}
+
+.weather-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 3em;
+  width: 100%;
+  margin: 10% auto;
+}
+
+.city-and-weather {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  width: 70%;
+}
+
+h1 {
+  color: #ffff;
+  font-size: 2em;
+}
+
+.weather-status {
+  color: #75b1ff;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+.temp {
+  font-size: 2em;
+}
+
+.weather-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 30%;
+}
+
+.icon {
+  color: white;
+  display: inline-block;
+}
+
+.additional-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.3em;
+  font-size: 1em;
+  color: white;
+  width: 30%;
+}
+
+.min-max {
+  margin-top: 15px;
+  display: flex;
+  gap: 3em;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.temp-btn {
+  margin-top: 2em;
+  padding: 0.5em 1.5em;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.error {
+  margin-top: 5em;
+  color: white;
+}
+
+@media (max-width: 1010px) {
+  .weather-list {
+    margin-top: 5rem;
+    flex-flow: wrap;
+  }
+
+  .city-and-weather {
+    width: 100%;
+  }
+  .additional-info {
+    width: 100%;
+  }
+}
+
+@media (max-width: 870px) {
+  .min-max {
+    flex-direction: column;
+    gap: 2.3rem;
+    margin-top: 2.3rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 100%;
+  }
+}
